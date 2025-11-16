@@ -22,7 +22,7 @@ const InvitationCards = ({
               Please join us as we embark on this chapter.
             </p>
             <div className="space-y-3 font-sans text-foreground">
-              <p className="text-center">
+              <p className="text-center font-thin text-xs">
                 <span className="font-semibold text-burgundy text-lg">Mohamed Unaish Amjadh</span><br />
                 The son of Ibrahim Amjadh and Aishath Ahmed
               </p>
