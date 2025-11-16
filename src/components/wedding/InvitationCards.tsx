@@ -27,7 +27,7 @@ const InvitationCards = ({
                 The son of Ibrahim Amjadh and Aishath Ahmed
               </p>
               <p className="text-center text-burgundy font-serif text-xl">weds</p>
-              <p className="text-center">
+              <p className="text-center text-xs font-thin">
                 <span className="font-semibold text-burgundy text-lg">Mariyam Rayyaan Rushdhy</span><br />
                 The daughter of Hassan Rushdhy and Seema Mohamed
               </p>
