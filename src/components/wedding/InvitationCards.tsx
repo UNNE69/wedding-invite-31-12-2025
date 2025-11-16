@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Calendar, Shirt, Gift } from "lucide-react";
+import { Calendar, Shirt, Gift, Heart } from "lucide-react";
 
 interface InvitationCardsProps {
   phase: number;
@@ -8,6 +8,38 @@ interface InvitationCardsProps {
 const InvitationCards = ({ phase }: InvitationCardsProps) => {
   return (
     <div className="space-y-6 max-w-2xl mx-auto">
+      {/* Card 0: Wedding Invite */}
+      <Card 
+        className={`p-6 md:p-8 bg-card shadow-card border-border/50 ${
+          phase >= 3 ? 'animate-slide-up' : 'opacity-0'
+        }`}
+        style={{ animationDelay: '0s' }}
+      >
+        <div className="flex items-start gap-4">
+          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-burgundy/10 flex items-center justify-center">
+            <Heart className="w-6 h-6 text-burgundy" />
+          </div>
+          <div className="flex-1">
+            <h2 className="text-2xl font-serif text-burgundy mb-3">Wedding Invite</h2>
+            <p className="font-sans text-foreground mb-4 italic">
+              Together with our families, we request the honor of your presence.
+              Please join us as we embark on this chapter.
+            </p>
+            <div className="space-y-3 font-sans text-foreground">
+              <p className="text-center">
+                The son of Ibrahim Amjadh and Aishath Ahmed,<br />
+                <span className="font-semibold text-burgundy text-lg">Mohamed Unaish Amjadh</span>
+              </p>
+              <p className="text-center text-burgundy font-serif text-xl">weds</p>
+              <p className="text-center">
+                The daughter of Hassan Rushdhy and Seema Mohamed,<br />
+                <span className="font-semibold text-burgundy text-lg">Mariyam Rayyaan Rushdhy</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </Card>
+
       {/* Card 1: Ceremony Details */}
       <Card 
         className={`p-6 md:p-8 bg-card shadow-card border-border/50 ${
