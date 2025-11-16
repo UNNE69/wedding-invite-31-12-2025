@@ -12,15 +12,16 @@ const EnvelopeOpen = ({ phase }: EnvelopeOpenProps) => {
         
         {/* Opened Flap - Animated */}
         <div 
-          className={`absolute top-0 left-1/2 -translate-x-1/2 w-full h-1/2 origin-top ${
+          className={`absolute top-0 left-0 w-full h-32 origin-top ${
             phase >= 2 ? 'animate-envelope-open' : ''
           }`}
           style={{ 
             transformStyle: 'preserve-3d',
-            backfaceVisibility: 'hidden'
+            backfaceVisibility: 'hidden',
+            clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
           }}
         >
-          <div className="w-0 h-0 border-l-[12rem] border-r-[12rem] border-t-[8rem] border-l-transparent border-r-transparent border-t-burgundy-dark mx-auto" />
+          <div className="w-full h-full bg-burgundy-dark opacity-90 rounded-t-lg" />
         </div>
 
         {/* Inner Card with Names */}
