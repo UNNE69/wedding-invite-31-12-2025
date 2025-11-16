@@ -70,8 +70,8 @@ const InvitationCards = ({ phase }: InvitationCardsProps) => {
         style={{ animationDelay: '0.5s' }}
       >
         <div className="flex items-start gap-4">
-          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-            <Gift className="w-6 h-6 text-gold-dark" />
+          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-burgundy/10 flex items-center justify-center">
+            <Gift className="w-6 h-6 text-burgundy" />
           </div>
           <div className="flex-1">
             <h2 className="text-2xl font-serif text-burgundy mb-2">Your Blessing</h2>
