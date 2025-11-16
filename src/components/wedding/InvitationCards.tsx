@@ -108,9 +108,7 @@ const InvitationCards = ({
               
               <div className="p-3 bg-cream-dark rounded-lg">
                 <p className="text-xs text-muted-foreground mb-1">Rayya's BML Account</p>
-                <p className="font-bold text-burgundy text-base md:text-lg tracking-wide">
-                  7770000076453
-                </p>
+                <p className="font-bold text-burgundy text-base md:text-lg tracking-wide">7770000063573</p>
               </div>
             </div>
           </div>
