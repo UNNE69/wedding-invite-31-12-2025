@@ -11,7 +11,12 @@ const EnvelopeClosed = ({ onOpen }: EnvelopeClosedProps) => {
       <div className="relative w-full max-w-md aspect-[3/2] perspective-1000">
         <div className="relative w-full h-full bg-gradient-to-br from-burgundy to-burgundy-dark rounded-lg shadow-elegant hover:shadow-2xl transition-all duration-500 hover:scale-105">
           {/* Envelope Flap Triangle */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12rem] border-r-[12rem] border-t-[8rem] border-l-transparent border-r-transparent border-t-burgundy-dark opacity-90" />
+          <div 
+            className="absolute top-0 left-0 w-full h-32 bg-burgundy-dark opacity-90 rounded-t-lg"
+            style={{
+              clipPath: 'polygon(0 0, 100% 0, 50% 100%)'
+            }}
+          />
           
           {/* Decorative Gold Border */}
           <div className="absolute inset-4 border-2 border-gold/30 rounded pointer-events-none" />
