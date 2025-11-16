@@ -23,13 +23,13 @@ const InvitationCards = ({
             </p>
             <div className="space-y-3 font-sans text-foreground">
               <p className="text-center">
-                The son of Ibrahim Amjadh and Aishath Ahmed,<br />
-                <span className="font-semibold text-burgundy text-lg">Mohamed Unaish Amjadh</span>
+                <span className="font-semibold text-burgundy text-lg">Mohamed Unaish Amjadh</span><br />
+                The son of Ibrahim Amjadh and Aishath Ahmed
               </p>
               <p className="text-center text-burgundy font-serif text-xl">weds</p>
               <p className="text-center">
-                The daughter of Hassan Rushdhy and Seema Mohamed,<br />
-                <span className="font-semibold text-burgundy text-lg">Mariyam Rayyaan Rushdhy</span>
+                <span className="font-semibold text-burgundy text-lg">Mariyam Rayyaan Rushdhy</span><br />
+                The daughter of Hassan Rushdhy and Seema Mohamed
               </p>
             </div>
           </div>
