@@ -77,16 +77,16 @@ const InvitationCards = ({
       </Card>
 
       {/* Card 3: Blessing / Donation */}
-      <Card className={`p-6 md:p-8 bg-card shadow-card border-border/50 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
+      <Card className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
       animationDelay: '0.5s'
     }}>
-        <div className="flex items-start gap-4">
-          <div className="flex-shrink-0 w-12 h-12 rounded-full bg-burgundy/10 flex items-center justify-center">
-            <Gift className="w-6 h-6 text-burgundy" />
+        <div className="flex items-start gap-3">
+          <div className="flex-shrink-0 w-9 h-9 rounded-full bg-burgundy/5 flex items-center justify-center">
+            <Gift className="w-4 h-4 text-burgundy/70" />
           </div>
           <div className="flex-1">
-            <h2 className="text-2xl font-serif text-burgundy mb-2">Your Blessing</h2>
-            <p className="text-sm font-sans text-muted-foreground italic mb-4">
+            <h2 className="text-lg font-serif text-burgundy/80 mb-2">Your Blessing</h2>
+            <p className="text-xs font-sans text-muted-foreground italic mb-3">
               Your presence is our present. Should you wish to bless us:
             </p>
             
