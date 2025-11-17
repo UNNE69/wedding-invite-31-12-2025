@@ -85,15 +85,15 @@ const InvitationCards = ({
             <Gift className="w-4 h-4 text-burgundy/70" />
           </div>
           <div className="flex-1">
-            <h2 className="text-lg font-serif text-burgundy/80 mb-2">Your Blessing</h2>
+            <h2 className="text-lg font-serif text-burgundy/80 mb-2 font-semibold">Your Blessing</h2>
             <p className="text-xs font-sans text-muted-foreground italic mb-3">
               Your presence is our present. Should you wish to bless us:
             </p>
             
             <div className="space-y-3 font-sans text-sm">
               <div className="p-3 bg-cream-dark rounded-lg">
-                <p className="text-xs text-muted-foreground mb-1">Unaish's BML Account</p>
-                <p className="font-bold text-burgundy text-base md:text-lg tracking-wide">
+                <p className="text-muted-foreground mb-1 text-xs">Unaish's BML Account</p>
+                <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">
                   7770000076245
                 </p>
               </div>
