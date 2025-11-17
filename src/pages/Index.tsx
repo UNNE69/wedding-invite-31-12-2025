@@ -14,7 +14,7 @@ const Index = () => {
   const handleReset = () => {
     setPhase(1);
   };
-  return <main className="min-h-screen bg-background flex items-center justify-center p-4 overflow-hidden">
+  return <main className="min-h-screen flex items-center justify-center p-4 overflow-hidden relative" style={{ backgroundImage: 'url(/floral-background.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="w-full max-w-4xl mx-auto">
         {/* Phase 1: Closed Envelope */}
         {phase === 1 && <div className="animate-scale-in">
