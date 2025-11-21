@@ -100,12 +100,12 @@ const InvitationCards = ({
               
               <div className="p-3 bg-cream-dark rounded-lg">
                 <p className="text-xs text-muted-foreground mb-1">Unaish's MIB Account</p>
-                <p className="font-bold text-burgundy text-base md:text-lg tracking-wide">90103101489291000</p>
+                <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">90103101489291000</p>
               </div>
               
               <div className="p-3 bg-cream-dark rounded-lg">
                 <p className="text-xs text-muted-foreground mb-1">Rayya's BML Account</p>
-                <p className="font-bold text-burgundy text-base md:text-lg tracking-wide">7770000063573</p>
+                <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">7770000063573</p>
               </div>
             </div>
           </div>
