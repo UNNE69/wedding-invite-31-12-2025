@@ -4,9 +4,9 @@ interface EnvelopeOpenProps {
 const EnvelopeOpen = ({
   phase
 }: EnvelopeOpenProps) => {
-  return <div className="relative w-full max-w-md mx-auto">
+  return <div className="relative w-full max-w-md mx-auto min-h-[300px]">
       {/* Opened Envelope Container */}
-      <div className="relative w-full aspect-[3/2]">
+      <div className="relative w-full aspect-[3/2] transition-all duration-700 ease-out">
         {/* Envelope Body */}
         <div className="absolute inset-0 bg-gradient-to-br from-burgundy to-burgundy-dark rounded-lg shadow-elegant" />
         
