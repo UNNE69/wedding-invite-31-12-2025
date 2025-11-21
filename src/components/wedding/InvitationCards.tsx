@@ -91,19 +91,19 @@ const InvitationCards = ({
             </p>
             
             <div className="space-y-3 font-sans text-sm">
-              <div className="p-3 bg-cream-dark rounded-lg">
+              <div className="p-3 bg-cream-dark rounded-lg mb-0 pb-[10px]">
                 <p className="text-muted-foreground mb-1 text-xs">Unaish's BML Account</p>
                 <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">
                   7770000076245
                 </p>
               </div>
               
-              <div className="p-3 bg-cream-dark rounded-lg">
+              <div className="p-3 bg-cream-dark rounded-lg pb-[10px]">
                 <p className="text-xs text-muted-foreground mb-1">Unaish's MIB Account</p>
                 <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">90103101489291000</p>
               </div>
               
-              <div className="p-3 bg-cream-dark rounded-lg">
+              <div className="p-3 bg-cream-dark rounded-lg pb-[10px]">
                 <p className="text-xs text-muted-foreground mb-1">Rayya's BML Account</p>
                 <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">7770000063573</p>
               </div>
