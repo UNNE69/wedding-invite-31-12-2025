@@ -34,7 +34,7 @@ const EnvelopeClosed = ({
         <p className="text-4xl font-ornamental text-gold animate-shimmer bg-gradient-to-r from-gold via-gold-dark to-gold bg-[length:200%_auto] bg-clip-text text-transparent my-px py-[5px] md:text-6xl">
           Click to Open
         </p>
-        <p className="text-sm font-sans text-muted-foreground tracking-wider uppercase">
+        <p className="text-sm font-sans text-muted-foreground tracking-wider uppercase font-extrabold">
           You're Invited
         </p>
       </div>
