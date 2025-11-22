@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Great Vibes', 'cursive'],
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Montserrat', 'sans-serif'],
+        ornamental: ['Allura', 'cursive'],
+        serif: ['Dancing Script', 'cursive'],
+        sans: ['Dancing Script', 'cursive'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
