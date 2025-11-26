@@ -68,7 +68,7 @@ const InvitationCards = ({
           <div className="flex-1">
             <h2 className="text-2xl font-serif text-burgundy mb-3">Dress Code</h2>
             <div className="flex flex-wrap gap-3">
-              {['Burgundy', 'Khaki', 'Black', 'White'].map(color => <div key={color} className="px-4 py-2 rounded-full bg-burgundy/10 border border-burgundy/20 font-sans text-burgundy font-medium">
+              {['Red'].map(color => <div key={color} className="px-4 py-2 rounded-full bg-burgundy/10 border border-burgundy/20 font-sans text-burgundy font-medium">
                   {color}
                 </div>)}
             </div>
