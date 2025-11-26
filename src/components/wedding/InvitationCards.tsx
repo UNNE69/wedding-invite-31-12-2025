@@ -77,35 +77,35 @@ const InvitationCards = ({
       </Card>
 
       {/* Card 3: Blessing / Donation */}
-      <Card className={`p-6 md:p-8 bg-card/60 shadow-sm border-border/30 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
+      <Card className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
       animationDelay: '0.5s'
     }}>
-        <div className="flex items-start gap-3">
-          <div className="flex-shrink-0 w-9 h-9 rounded-full bg-burgundy/5 flex items-center justify-center">
-            <Gift className="w-4 h-4 text-burgundy/70" />
+        <div className="flex items-start gap-2">
+          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-burgundy/5 flex items-center justify-center">
+            <Gift className="w-3.5 h-3.5 text-burgundy/70" />
           </div>
           <div className="flex-1">
-            <h2 className="text-lg font-serif text-burgundy/80 mb-2 font-semibold">Your Blessing</h2>
-            <p className="text-xs font-sans text-muted-foreground mb-3">
+            <h2 className="text-base font-serif text-burgundy/80 mb-1.5 font-semibold">Your Blessing</h2>
+            <p className="text-xs font-sans text-muted-foreground mb-2.5">
               Your presence is our present. Should you wish to bless us:
             </p>
             
-            <div className="space-y-3 font-sans text-sm">
-              <div className="p-3 bg-cream-dark rounded-lg mb-0 pb-[10px]">
-                <p className="text-muted-foreground mb-1 text-xs">Unaish's BML Account</p>
-                <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">
+            <div className="space-y-2 font-sans text-sm">
+              <div className="p-2 bg-cream-dark rounded-lg">
+                <p className="text-muted-foreground mb-0.5 text-xs">Unaish's BML Account</p>
+                <p className="font-bold text-burgundy md:text-base tracking-wide text-xs">
                   7770000076245
                 </p>
               </div>
               
-              <div className="p-3 bg-cream-dark rounded-lg pb-[10px]">
-                <p className="text-xs text-muted-foreground mb-1">Unaish's MIB Account</p>
-                <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">90103101489291000</p>
+              <div className="p-2 bg-cream-dark rounded-lg">
+                <p className="text-xs text-muted-foreground mb-0.5">Unaish's MIB Account</p>
+                <p className="font-bold text-burgundy md:text-base tracking-wide text-xs">90103101489291000</p>
               </div>
               
-              <div className="p-3 bg-cream-dark rounded-lg pb-[10px]">
-                <p className="text-xs text-muted-foreground mb-1">Rayya's BML Account</p>
-                <p className="font-bold text-burgundy md:text-lg tracking-wide text-xs">7770000063573</p>
+              <div className="p-2 bg-cream-dark rounded-lg">
+                <p className="text-xs text-muted-foreground mb-0.5">Rayya's BML Account</p>
+                <p className="font-bold text-burgundy md:text-base tracking-wide text-xs">7770000063573</p>
               </div>
             </div>
           </div>
