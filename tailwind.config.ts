@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Alex Brush', 'cursive'],
-        serif: ['Alex Brush', 'cursive'],
-        sans: ['Alex Brush', 'cursive'],
+        ornamental: ['Playfair Display', 'serif'],
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Playfair Display', 'serif'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
