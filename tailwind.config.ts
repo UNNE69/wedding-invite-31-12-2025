@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Allura', 'cursive'],
-        serif: ['Dancing Script', 'cursive'],
-        sans: ['Dancing Script', 'cursive'],
+        ornamental: ['Kaushan Script', 'cursive'],
+        serif: ['Kaushan Script', 'cursive'],
+        sans: ['Quicksand', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
