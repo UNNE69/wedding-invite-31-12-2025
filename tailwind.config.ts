@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Sacramento', 'cursive'],
-        serif: ['Sacramento', 'cursive'],
-        sans: ['Sacramento', 'cursive'],
+        ornamental: ['Great Vibes', 'cursive'],
+        serif: ['Great Vibes', 'cursive'],
+        sans: ['Great Vibes', 'cursive'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
