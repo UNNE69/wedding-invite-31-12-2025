@@ -28,7 +28,7 @@ const Index = () => {
           </div>}
 
         {/* Phase 2, 3, 4: Opening Animation + Cards */}
-        {phase >= 2 && <div className="space-y-2 animate-fade-in">
+        {phase >= 2 && <div className="space-y-6 animate-fade-in">
             <EnvelopeOpen phase={phase} />
             
             {phase >= 3 && <div className="animate-slide-up">

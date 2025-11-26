@@ -77,7 +77,7 @@ const InvitationCards = ({
       </Card>
 
       {/* Card 3: Blessing / Donation */}
-      <Card className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
+      <Card className={`p-6 md:p-8 bg-card/60 shadow-sm border-border/30 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
       animationDelay: '0.5s'
     }}>
         <div className="flex items-start gap-3">
