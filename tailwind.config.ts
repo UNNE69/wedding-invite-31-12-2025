@@ -74,7 +74,7 @@ export default {
       fontFamily: {
         ornamental: ['Kaushan Script', 'cursive'],
         serif: ['Kaushan Script', 'cursive'],
-        sans: ['Quicksand', 'system-ui', 'sans-serif'],
+        sans: ['Kaushan Script', 'cursive'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
