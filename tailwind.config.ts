@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Pacifico', 'cursive'],
-        serif: ['Pacifico', 'cursive'],
-        sans: ['Pacifico', 'cursive'],
+        ornamental: ['Sacramento', 'cursive'],
+        serif: ['Sacramento', 'cursive'],
+        sans: ['Sacramento', 'cursive'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
