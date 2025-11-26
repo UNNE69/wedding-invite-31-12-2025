@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Kaushan Script', 'cursive'],
-        serif: ['Kaushan Script', 'cursive'],
-        sans: ['Kaushan Script', 'cursive'],
+        ornamental: ['Pacifico', 'cursive'],
+        serif: ['Pacifico', 'cursive'],
+        sans: ['Pacifico', 'cursive'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
