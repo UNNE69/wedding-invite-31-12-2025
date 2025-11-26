@@ -72,9 +72,9 @@ export default {
         },
       },
       fontFamily: {
-        ornamental: ['Palisade', 'cursive'],
-        serif: ['Palisade', 'cursive'],
-        sans: ['Palisade', 'cursive'],
+        ornamental: ['Ms Madi', 'cursive'],
+        serif: ['Ms Madi', 'cursive'],
+        sans: ['Ms Madi', 'cursive'],
       },
       boxShadow: {
         elegant: 'var(--shadow-elegant)',
