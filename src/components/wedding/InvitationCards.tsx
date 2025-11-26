@@ -17,7 +17,7 @@ const InvitationCards = ({
           </div>
           <div className="flex-1">
             <h2 className="text-2xl font-serif text-burgundy mb-3">Wedding Invite</h2>
-            <p className="font-sans text-foreground mb-4 italic">Together with our families, we request the honor of your presence. Please join us as we embark on this chapter.</p>
+            <p className="font-sans text-foreground mb-4">Together with our families, we request the honor of your presence. Please join us as we embark on this chapter.</p>
             <div className="space-y-3 font-sans text-foreground">
               <p className="text-center font-thin text-xs">
                 <span className="font-semibold text-burgundy text-lg">Mohamed Unaish Amjadh</span><br />
@@ -86,7 +86,7 @@ const InvitationCards = ({
           </div>
           <div className="flex-1">
             <h2 className="text-lg font-serif text-burgundy/80 mb-2 font-semibold">Your Blessing</h2>
-            <p className="text-xs font-sans text-muted-foreground italic mb-3">
+            <p className="text-xs font-sans text-muted-foreground mb-3">
               Your presence is our present. Should you wish to bless us:
             </p>
             
