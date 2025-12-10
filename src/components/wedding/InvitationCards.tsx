@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Calendar, Shirt, Gift, Heart } from "lucide-react";
 import { useState } from "react";
-
 interface InvitationCardsProps {
   phase: number;
 }
@@ -49,7 +48,7 @@ const InvitationCards = ({
             <div className="space-y-2 font-sans text-foreground">
               <p className="flex flex-col md:flex-row md:gap-2">
                 <span className="font-semibold text-burgundy">Location:</span>
-                <span>In front of Dhiraagu SOC office</span>
+                <span>In front of Dhiraagu Seenu Operations Center </span>
               </p>
               <p className="flex flex-col md:flex-row md:gap-2">
                 <span className="font-semibold text-burgundy">Date & Time:</span>
@@ -80,15 +79,11 @@ const InvitationCards = ({
       </Card>
 
       {/* Card 3: Blessing / Donation */}
-      <Card 
-        className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 relative overflow-hidden cursor-pointer ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} 
-        style={{ animationDelay: '0.5s' }}
-        onClick={() => setSadaqatRevealed(true)}
-      >
+      <Card className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 relative overflow-hidden cursor-pointer ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
+      animationDelay: '0.5s'
+    }} onClick={() => setSadaqatRevealed(true)}>
         {/* Blur Overlay */}
-        <div 
-          className={`absolute inset-0 z-10 flex items-center justify-center bg-card/60 backdrop-blur-sm transition-all duration-700 ${sadaqatRevealed ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
-        >
+        <div className={`absolute inset-0 z-10 flex items-center justify-center bg-card/60 backdrop-blur-sm transition-all duration-700 ${sadaqatRevealed ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
           <span className="text-burgundy font-serif text-xl md:text-2xl font-semibold">Click to Sadaqat</span>
         </div>
 
