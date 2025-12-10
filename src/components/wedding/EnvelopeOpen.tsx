@@ -22,7 +22,7 @@ const EnvelopeOpen = ({
         {/* Inner Card with Names */}
         <div className={`absolute inset-8 flex items-center justify-center ${phase >= 2 ? 'animate-fade-in' : 'opacity-0'}`}>
           <div className="bg-cream rounded-lg p-4 shadow-card text-center w-full h-full flex flex-col items-center justify-center gap-3">
-            <h1 className="md:text-4xl font-ornamental text-gold animate-shimmer bg-gradient-to-r from-gold via-gold-dark to-gold bg-[length:200%_auto] bg-clip-text text-transparent leading-tight text-5xl mb-[15px] pb-[15px]">
+            <h1 className="md:text-4xl font-ornamental text-gold animate-shimmer bg-gradient-to-r from-gold via-gold-dark to-gold bg-[length:200%_auto] bg-clip-text text-transparent leading-tight text-5xl mb-[10px] pb-[10px]">
               Unaish & Rayya
             </h1>
             
