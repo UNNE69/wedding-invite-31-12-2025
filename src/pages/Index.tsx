@@ -1,9 +1,7 @@
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import EnvelopeClosed from "@/components/wedding/EnvelopeClosed";
 import EnvelopeOpen from "@/components/wedding/EnvelopeOpen";
-
-// Lazy load InvitationCards since it appears with a delay
-const InvitationCards = lazy(() => import("@/components/wedding/InvitationCards"));
+import InvitationCards from "@/components/wedding/InvitationCards";
 const Index = () => {
   const [phase, setPhase] = useState<1 | 2 | 3 | 4>(1);
   const handleOpenEnvelope = () => {
@@ -35,11 +33,9 @@ const Index = () => {
         {phase >= 2 && <div className="space-y-6 animate-fade-in">
             <EnvelopeOpen phase={phase} />
             
-            {phase >= 3 && <Suspense fallback={<div className="h-48" />}>
-                <div className="animate-slide-up">
-                  <InvitationCards phase={phase} />
-                </div>
-              </Suspense>}
+            {phase >= 3 && <div className="animate-slide-up">
+                <InvitationCards phase={phase} />
+              </div>}
 
             {phase === 4 && <div className="text-center mt-8 animate-fade-in">
                 
