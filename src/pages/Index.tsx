@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { useState, lazy, Suspense } from "react";
 import EnvelopeClosed from "@/components/wedding/EnvelopeClosed";
-import EnvelopeOpen from "@/components/wedding/EnvelopeOpen";
-import InvitationCards from "@/components/wedding/InvitationCards";
+
+// Lazy load components that appear after user interaction
+const EnvelopeOpen = lazy(() => import("@/components/wedding/EnvelopeOpen"));
+const InvitationCards = lazy(() => import("@/components/wedding/InvitationCards"));
 const Index = () => {
   const [phase, setPhase] = useState<1 | 2 | 3 | 4>(1);
   const handleOpenEnvelope = () => {
@@ -32,17 +32,19 @@ const Index = () => {
           </div>}
 
         {/* Phase 2, 3, 4: Opening Animation + Cards */}
-        {phase >= 2 && <div className="space-y-6 animate-fade-in">
-            <EnvelopeOpen phase={phase} />
-            
-            {phase >= 3 && <div className="animate-slide-up">
-                <InvitationCards phase={phase} />
-              </div>}
+        {phase >= 2 && <Suspense fallback={<div className="h-48" />}>
+            <div className="space-y-6 animate-fade-in">
+              <EnvelopeOpen phase={phase} />
+              
+              {phase >= 3 && <div className="animate-slide-up">
+                  <InvitationCards phase={phase} />
+                </div>}
 
-            {phase === 4 && <div className="text-center mt-8 animate-fade-in">
-                
-              </div>}
-          </div>}
+              {phase === 4 && <div className="text-center mt-8 animate-fade-in">
+                  
+                </div>}
+            </div>
+          </Suspense>}
       </div>
     </main>;
 };
