@@ -1,11 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Calendar, Shirt, Gift, Heart } from "lucide-react";
+import { useState } from "react";
+
 interface InvitationCardsProps {
   phase: number;
 }
 const InvitationCards = ({
   phase
 }: InvitationCardsProps) => {
+  const [sadaqatRevealed, setSadaqatRevealed] = useState(false);
   return <div className="space-y-6 max-w-2xl mx-auto">
       {/* Card 0: Wedding Invite */}
       <Card className={`p-6 md:p-8 bg-card shadow-card border-border/50 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
@@ -77,10 +80,19 @@ const InvitationCards = ({
       </Card>
 
       {/* Card 3: Blessing / Donation */}
-      <Card className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} style={{
-      animationDelay: '0.5s'
-    }}>
-        <div className="flex items-start gap-2">
+      <Card 
+        className={`p-4 md:p-5 bg-card/60 shadow-sm border-border/30 relative overflow-hidden cursor-pointer ${phase >= 3 ? 'animate-slide-up' : 'opacity-0'}`} 
+        style={{ animationDelay: '0.5s' }}
+        onClick={() => setSadaqatRevealed(true)}
+      >
+        {/* Blur Overlay */}
+        <div 
+          className={`absolute inset-0 z-10 flex items-center justify-center bg-card/80 backdrop-blur-xl transition-all duration-700 ${sadaqatRevealed ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+        >
+          <span className="text-burgundy font-serif text-xl md:text-2xl font-semibold">Click to Sadaqat</span>
+        </div>
+
+        <div className={`flex items-start gap-2 transition-all duration-500 ${sadaqatRevealed ? 'blur-none' : 'blur-md'}`}>
           <div className="flex-shrink-0 w-8 h-8 rounded-full bg-burgundy/5 flex items-center justify-center">
             <Gift className="w-3.5 h-3.5 text-burgundy/70" />
           </div>
@@ -97,8 +109,6 @@ const InvitationCards = ({
                   7770000076245
                 </p>
               </div>
-              
-              
               
               <div className="p-2 bg-cream-dark rounded-lg">
                 <p className="text-xs text-muted-foreground mb-0.5">Rayya's BML Account</p>
