@@ -14,13 +14,17 @@ const Index = () => {
   const handleReset = () => {
     setPhase(1);
   };
-  return <main className="min-h-screen flex items-start justify-center p-4 overflow-hidden relative" style={{
-    backgroundImage: 'url(/floral-background.jpg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed'
-  }}>
+  return <main className="min-h-screen flex items-start justify-center p-4 overflow-hidden relative">
+      {/* Fixed background that won't shift on mobile */}
+      <div 
+        className="fixed inset-0 -z-10"
+        style={{
+          backgroundImage: 'url(/floral-background.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
       <div className={`w-full max-w-4xl transition-all duration-1000 ease-out ${phase === 1 ? 'mt-[20vh]' : 'mt-8'}`}>
         {/* Phase 1: Closed Envelope */}
         {phase === 1 && <div className="animate-scale-in">
