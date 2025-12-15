@@ -84,7 +84,7 @@ const InvitationCards = ({
     }} onClick={() => setSadaqatRevealed(true)}>
         {/* Blur Overlay */}
         <div className={`absolute inset-0 z-10 flex items-center justify-center bg-card/60 backdrop-blur-sm transition-all duration-700 ${sadaqatRevealed ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-          <span className="text-burgundy font-serif text-xl md:text-2xl font-semibold">Click to Sadaqat</span>
+          <span className="text-burgundy font-serif text-xl md:text-2xl font-semibold">For Family & Well-Wishers</span>
         </div>
 
         <div className={`flex items-start gap-2 transition-all duration-500 ${sadaqatRevealed ? 'blur-none' : 'blur-[2px]'}`}>
