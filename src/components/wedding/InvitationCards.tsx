@@ -52,7 +52,7 @@ const InvitationCards = ({
               </p>
               <p className="flex flex-col md:flex-row md:gap-2">
                 <span className="font-semibold text-burgundy">Date & Time:</span>
-                <span>31 December 2025 — 16:00</span>
+                <span>31 December 2025 - 16:30</span>
               </p>
             </div>
           </div>
