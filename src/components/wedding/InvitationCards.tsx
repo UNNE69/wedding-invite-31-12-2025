@@ -48,7 +48,7 @@ const InvitationCards = ({
             <div className="space-y-2 font-sans text-foreground">
               <p className="flex flex-col md:flex-row md:gap-2">
                 <span className="font-semibold text-burgundy">Location:</span>
-                <span>In front of Dhiraagu Seenu Operations Center </span>
+                <span>Hithadhoo School </span>
               </p>
               <p className="flex flex-col md:flex-row md:gap-2">
                 <span className="font-semibold text-burgundy">Date & Time:</span>
